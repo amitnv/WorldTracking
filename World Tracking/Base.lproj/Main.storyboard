@@ -38,15 +38,36 @@
                                     <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lyb-iM-C6R"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOo-E4-gL3">
+                                <rect key="frame" x="275" y="567" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="B5o-mN-ZFh"/>
+                                    <constraint firstAttribute="height" constant="80" id="NE9-sy-RLZ"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wib-9p-lUi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mm4-Si-th4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GYm-vY-q32"/>
                             <constraint firstItem="mm4-Si-th4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MBE-c3-hIH"/>
                             <constraint firstItem="mm4-Si-th4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ngp-DL-qP0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xOo-E4-gL3" secondAttribute="trailing" constant="20" id="XxM-kB-SbH"/>
                             <constraint firstItem="aHg-31-dFc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cW9-Ou-P71"/>
                             <constraint firstItem="mm4-Si-th4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jZe-IN-b0n"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aHg-31-dFc" secondAttribute="bottom" constant="20" id="xaN-8Y-8rz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xOo-E4-gL3" secondAttribute="bottom" constant="20" id="z0Q-Og-xDa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
