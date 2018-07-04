@@ -23,12 +23,10 @@ class ViewController: UIViewController {
 
     @IBAction func add(_ sender: Any) {
         let node = SCNNode()
-//        decides the height, width and length of the box to be created when add is pressed
-        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.01)
-        //reflects white light on the surface
+        node.geometry = SCNTorus(ringRadius: 0.02, pipeRadius: 0.01)
+//        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.01)
         node.geometry?.firstMaterial?.specular.contents = UIColor.white
-//        UIColor.<give any color here> to choose the color of the box
-        node.geometry?.firstMaterial?.diffuse.contents = UIColor.yellow
+        node.geometry?.firstMaterial?.diffuse.contents = UIColor.brown
         let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
         let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
         let z = randomNumbers(firstNum: -0.3, secondNum: 0.3)
